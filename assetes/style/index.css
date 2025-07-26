@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+:root{
+
+    --primary-color:rgb(212, 83, 103);
+    --second-color:rgb(2, 2, 48);
+    --text-color:pink;
+    --design-color:navy;
+    
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px dotted var(--second-color);
+}
+.logo h1{
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.icons button{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--second-color);
+   color: var(--text-color);
+   border-radius: 50px;
+   transition: 0.2s ease-in-out;
+
+   a{
+    text-decoration: none;
+    color: var(--text-color);
+   }
+}
+.icons button:hover{
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    border: 2px dotted var(--second-color);
+}
+.cart{
+    font-size: 30px;
+    
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: var(--primary-color);
+    padding-top: 70px;
+    padding-bottom: 20px;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    height: 450px;
+    width: 300px;
+    border: 2px dotted var(--second-color);
+    background-color: #fff;
+   transition: 0.7s ease;
+    
+}
+.container:hover{
+    background-color: var(--text-color);
+}
+.product-image{
+    height:300px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-image img{
+    width: 150px;
+}
+.card-details{
+   height: 150px;
+   color: var(--second-color);
+   font-family: cursive;
+}
+.card-details h3{
+    height: 100px;
+}
+.price{
+
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50px;
+   p{
+    font-size: 20px;
+
+   }
+
+}
+.price i{
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+.price i:hover{
+    font-size: 27px;
+    color: var(--primary-color);
+}
+.footer{
+    background-color: var(--primary-color);
+    border-top: 2px dotted var(--second-color);
+    padding: 20px 100px 0px 100px;
+    color: var(--second-color);
+}
+.company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icons{
+    display: flex;
+   gap:30px;
+   font-size: 20px;
+}
+.company-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-color: var(--primary-color);
+color: var(--second-color);
+}
+.footer-icons{
+    a{
+        text-decoration: none;
+        color: var(--second-color);
+    }
+}
+@media (max-width:400px) {
+.logo h1{
+    font-size: 20px;
+}
+.icons{
+    gap: 15px;
+    font-size: 15px;
+}
+.icons button{
+    font-size: 10px;
+    font-weight: bold;
+}
+.cart{
+    font-size: 17px; 
+}
+}
+@media (max-width:500px){
+  
+
+.company{
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.company-footer{
+    flex-direction: column;
+}
+
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    height: 100vh;
+    padding-top: 70px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted var(--second-color);
+    width: 70%;
+    height:80%;
+    gap: 20px;
+
+    div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        color: var(--second-color);
+
+        select,
+        input{
+            background-color: var(--text-color);
+            padding-top: 10px;
+            border: 1px dotted var(--second-color);
+            color: var(--second-color);
+        }
+    }
+   .button{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--second-color);
+   color: var(--text-color);
+   border-radius: 50px;
+
+}
+
+}
+@media (max-width:600px){
+  
+.form-container form{
+    
+    width: 90%;
+    height:80%;
+}
+} 
